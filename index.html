@@ -1,283 +1,150 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
-  <title>Pravallika Ukkalam — DevOps Engineer</title>
-  <meta name="description" content="Pravallika Ukkalam — DevOps & Azure Cloud Engineer. CI/CD, Terraform, AKS, Docker, Jenkins, ELK, Grafana." />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
-  <style>
-    :root{
-      --bg:#05060a;
-      --card:#0f1720;
-      --muted:#98a0b3;
-      --accent:#00d1b2;
-      --accent-2:#ffcc33;
-      --glass: rgba(255,255,255,0.03);
-      --radius:16px;
-      --maxw:1100px;
-    }
-    *{box-sizing:border-box}
-    body{
-      margin:0;
-      font-family:Inter,system-ui,Segoe UI,Roboto,Helvetica,Arial,sans-serif;
-      background: linear-gradient(180deg,#02030a 0%, #071127 55%, #041022 100%);
-      color:#e6eef9;
-      -webkit-font-smoothing:antialiased;
-      -moz-osx-font-smoothing:grayscale;
-      line-height:1.5;
-    }
-    .wrap{max-width:var(--maxw);margin:28px auto;padding:24px;}
-    header{display:flex;gap:24px;align-items:center;justify-content:space-between;margin-bottom:18px}
-    .brand{display:flex;gap:16px;align-items:center}
-    .logo{
-      width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#2dd4bf);
-      display:flex;align-items:center;justify-content:center;font-weight:800;color:#021019;font-size:20px;
-      box-shadow:0 8px 24px rgba(0,0,0,0.5);
-    }
-    h1{font-size:44px;margin:0;letter-spacing:-0.5px}
-    .subtitle{color:var(--muted);margin-top:6px;font-size:15px}
-    .top-links a{color:var(--accent-2);text-decoration:none;padding:8px 12px;border-radius:999px;border:1px solid rgba(255,255,255,0.03);margin-left:8px}
-    .hero{
-      display:grid;grid-template-columns:1fr 360px;gap:28px;align-items:center;margin-bottom:30px;
-      background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));
-      padding:28px;border-radius:var(--radius);box-shadow:0 10px 30px rgba(0,0,0,0.5);
-    }
-    .badge{display:inline-block;background:var(--glass);padding:6px 10px;border-radius:999px;color:var(--muted);font-size:13px;margin-bottom:12px}
-    .callout{font-size:16px;color:var(--muted);margin-top:12px}
-    .cta{margin-top:18px;display:flex;gap:12px}
-    .btn{
-      display:inline-block;padding:10px 14px;border-radius:10px;text-decoration:none;font-weight:600;
-      background:transparent;border:1px solid rgba(255,255,255,0.06);color:#e8f5ff
-    }
-    .btn.primary{background:linear-gradient(90deg,var(--accent),#04bda6);color:#031b18;border:none;box-shadow:0 8px 30px rgba(2,13,14,0.35)}
-    .card{background:var(--card);padding:20px;border-radius:12px}
-    .skills-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:14px}
-    section+section{margin-top:22px}
-    h2{margin:0 0 12px 0;font-size:22px}
-    ul{margin:0;padding-left:20px}
-    .two-col{display:grid;grid-template-columns:1fr 360px;gap:22px}
-    .project{background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00)); padding:16px;border-radius:10px}
-    .project h3{margin:0 0 6px 0}
-    .muted{color:var(--muted);font-size:14px}
-    footer{margin-top:36px;padding:20px;border-radius:12px;background:linear-gradient(180deg, rgba(255,255,255,0.01), rgba(255,255,255,0.00));display:flex;justify-content:space-between;align-items:center}
-    .contact-list{list-style:none;padding:0;margin:8px 0 0 0}
-    .contact-list li{padding:8px 0;color:var(--muted)}
-    .chip{display:inline-block;padding:6px 10px;border-radius:8px;background:rgba(255,255,255,0.03);color:var(--muted);font-size:13px;margin-right:8px}
-    /* responsive */
-    @media (max-width:900px){
-      .hero,.two-col{grid-template-columns:1fr; padding:18px}
-      .hero img{display:none}
-      .top-links{display:none}
-      .skills-grid{grid-template-columns:repeat(1,1fr)}
-    }
-    /* small helper */
-    .small{font-size:13px;color:var(--muted)}
-    .tag{display:inline-block;padding:6px 8px;background:rgba(255,255,255,0.03);border-radius:8px;margin-right:8px;font-size:13px;color:var(--muted)}
-    a.link{color:var(--accent);text-decoration:none}
-    .pill{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(255,255,255,0.03);font-weight:600;color:var(--muted)}
-  </style>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pravallika Ukkalam – DevOps & Azure Cloud Engineer</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #0c0c0c;
+            color: #f5f5f5;
+        }
+        header {
+            padding: 50px 5%;
+            background: #000;
+        }
+        h1 {
+            font-size: 48px;
+            color: #ffb400;
+            margin-bottom: 10px;
+        }
+        h2 {
+            color: #ffb400;
+            border-bottom: 2px solid #333;
+            padding-bottom: 5px;
+        }
+        .container {
+            width: 90%;
+            margin: 30px auto;
+        }
+        .section {
+            margin-bottom: 50px;
+        }
+        .contact a {
+            color: #ffb400;
+            text-decoration: none;
+        }
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+        }
+        .card {
+            background: #111;
+            padding: 20px;
+            border-radius: 10px;
+            border: 1px solid #333;
+        }
+    </style>
 </head>
+
 <body>
-  <div class="wrap">
-    <header>
-      <div class="brand">
-        <div class="logo">PU</div>
-        <div>
-          <div style="display:flex;gap:6px;align-items:center">
-            <div style="font-weight:800">Pravallika Ukkalam</div>
-            <div class="pill">DevOps Engineer</div>
-          </div>
-          <div class="subtitle">Cloud Automation • Azure • CI/CD • Kubernetes • Terraform</div>
-        </div>
-      </div>
-      <div class="top-links">
-        <a class="btn" href="https://github.com/Pravallika-cloudops" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="https://www.linkedin.com/in/pravallika-ukkalam" target="_blank" rel="noopener">LinkedIn</a>
-      </div>
-    </header>
 
-    <!-- HERO -->
-    <section class="hero">
-      <div>
-        <div class="badge">Open to work — Ireland (Stamp 1G)</div>
-        <h1>Pravallika Ukkalam</h1>
-        <div style="font-size:20px;color:#dff7ef;font-weight:600">DevOps & Azure Cloud Engineer</div>
-        <p class="callout">
-          Results-driven DevOps engineer with 4+ years of hands-on experience architecting scalable cloud solutions across Azure and AWS. 
-          I specialize in automating infrastructure, building robust CI/CD pipelines, and orchestrating containerized applications to drive efficiency and reliability.
-        </p>
+<header>
+    <h1>Pravallika Ukkalam</h1>
+    <p>DevOps Engineer | Azure Cloud Specialist | CI/CD | Terraform | Kubernetes</p>
+</header>
 
-        <div class="cta">
-          <a class="btn primary" href="#projects">View Projects</a>
-          <a class="btn" href="#contact">Contact</a>
-        </div>
+<div class="container">
 
-        <div style="margin-top:14px" class="small">
-          <span class="tag">AZ-900</span>
-          <span class="tag">AZ-104 (in progress)</span>
-          <span class="tag">MS Data Analytics</span>
-        </div>
-      </div>
-
-      <!-- right card -->
-      <aside class="card">
-        <div style="display:flex;flex-direction:column;gap:10px">
-          <div style="font-weight:700">Contact</div>
-          <ul class="contact-list">
-            <li>📍 Ireland</li>
-            <li>✉️ <a class="link" href="mailto:ukkalampravallika@gmail.com">ukkalampravallika@gmail.com</a></li>
-            <li>📞 +353 89 976 1911</li>
-            <li>🔗 <a class="link" href="https://github.com/Pravallika-cloudops" target="_blank">github.com/Pravallika-cloudops</a></li>
-            <li>🔗 <a class="link" href="https://www.linkedin.com/in/pravallika-ukkalam" target="_blank">linkedin.com/in/pravallika-ukkalam</a></li>
-          </ul>
-        </div>
-      </aside>
-    </section>
-
-    <!-- ABOUT + SKILLS -->
-    <section class="two-col">
-      <div class="card">
+    <!-- ABOUT SECTION -->
+    <div class="section">
         <h2>About Me</h2>
-        <p class="muted">
-          I am a DevOps Engineer with 4+ years of experience building scalable cloud environments, automating CI/CD pipelines,
-          and deploying containerized applications. Skilled in Azure, Terraform, Jenkins, Docker, and Kubernetes, with hands-on experience in monitoring, logging, and infrastructure automation.
-          Completed my Master’s in Data Analytics from Dublin Business School.
+        <p>
+            DevOps & Azure Cloud Engineer with 4+ years of hands-on experience in CI/CD, 
+            infrastructure automation, AKS, Terraform, monitoring, and enterprise cloud solutions.
+            Skilled in delivering scalable, secure, and automated cloud environments.
         </p>
+    </div>
 
-        <h3 style="margin-top:16px">Core strengths</h3>
-        <ul class="small">
-          <li>Infrastructure as Code (Terraform, Bicep)</li>
-          <li>CI/CD pipelines and release automation (Jenkins, Azure DevOps, GitHub Actions)</li>
-          <li>Containerization & orchestration (Docker, AKS)</li>
-          <li>Monitoring & logging (Prometheus, Grafana, ELK)</li>
-          <li>Linux, Shell scripting, Python for automation</li>
-        </ul>
-      </div>
+    <!-- EXPERIENCE SECTION -->
+    <div class="section">
+        <h2>Experience</h2>
+        <div class="card">
+            <h3>DevOps & Azure Cloud Engineer – Omnistore POS Retail Solution</h3>
+            <p><strong>Tata Consultancy Services (TCS)</strong> | May 2020 – April 2023</p>
 
-      <aside class="card">
+            <ul>
+                <li>Managed end-to-end DevOps pipelines using Azure DevOps, Jenkins, Docker for Omnistore retail platform.</li>
+                <li>Automated Azure infrastructure using Terraform & Bicep for scalable cloud environments.</li>
+                <li>Administered Azure Cloud Services ensuring uptime, security, and performance.</li>
+                <li>Deployed and managed AKS, Docker, Kubernetes for production-grade containerized workloads.</li>
+                <li>Developed CI/CD pipelines with Jenkins, Git, Maven enabling automated testing and fast deployments.</li>
+                <li>Integrated Prometheus, Grafana, ELK Stack for monitoring, logging & real-time performance insights.</li>
+                <li>Supported release management and collaborated with development teams for smooth production releases.</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- SKILLS SECTION -->
+    <div class="section">
         <h2>Technical Skills</h2>
-        <div style="margin-top:8px">
-          <div class="small"><strong>Cloud & DevOps</strong></div>
-          <div class="small" style="margin-bottom:10px">Azure (AKS, ACR, VMs), AWS (EC2, S3)</div>
 
-          <div class="small"><strong>CI/CD & Tools</strong></div>
-          <div class="small" style="margin-bottom:10px">Jenkins, Azure DevOps, GitHub Actions, GitLab CI, Maven</div>
+        <div class="skills-grid">
+            <div class="card">
+                <h3>Cloud</h3>
+                <p>Azure, AWS (Basics), Azure DevOps</p>
+            </div>
 
-          <div class="small"><strong>IaC & Automation</strong></div>
-          <div class="small" style="margin-bottom:10px">Terraform, Bicep, Ansible, Shell scripting</div>
+            <div class="card">
+                <h3>DevOps Tools</h3>
+                <p>Jenkins, GitHub, GitLab, Docker, Kubernetes, AKS</p>
+            </div>
 
-          <div class="small"><strong>Containers & Monitoring</strong></div>
-          <div class="small" style="margin-bottom:10px">Docker, Kubernetes (AKS), Helm, ELK, Prometheus, Grafana</div>
+            <div class="card">
+                <h3>IaC</h3>
+                <p>Terraform, Bicep, ARM Templates</p>
+            </div>
 
-          <div class="small"><strong>Languages & Tools</strong></div>
-          <div class="small">Python, Bash, Git, SonarQube, Nexus/Artifactory</div>
+            <div class="card">
+                <h3>Monitoring</h3>
+                <p>ELK, Prometheus, Grafana</p>
+            </div>
+
+            <div class="card">
+                <h3>Programming</h3>
+                <p>Python (Basics), Shell Scripting</p>
+            </div>
+
+            <div class="card">
+                <h3>Build Tools</h3>
+                <p>Maven, Nexus, Artifactory</p>
+            </div>
         </div>
-      </aside>
-    </section>
+    </div>
 
-    <!-- Projects -->
-    <section id="projects">
-      <h2 style="margin-bottom:12px">Selected Projects</h2>
-      <div class="skills-grid">
-        <div class="project card">
-          <h3>CI/CD Pipeline with Jenkins</h3>
-          <div class="muted">Jenkins • Docker • AKS • Maven</div>
-          <p class="small" style="margin-top:8px">
-            Built an end-to-end CI/CD pipeline integrating Git → Jenkins → Docker → AKS. Automated build, unit tests, artifact generation,
-            container image builds and push, and deployment to AKS with Helm charts and environment-specific values.
-          </p>
-        </div>
+    <!-- CONTACT SECTION -->
+    <div class="section contact">
+        <h2>Contact</h2>
+        <p><strong>Location:</strong> Ireland</p>
+        <p><strong>Email:</strong> <a href="mailto:ukkalampravallika@gmail.com">ukkalampravallika@gmail.com</a></p>
+        <p><strong>Phone:</strong> +353 899761911</p>
+        <p><strong>GitHub:</strong> 
+            <a href="https://github.com/Pravallika-cloudops" target="_blank">
+                github.com/Pravallika-cloudops
+            </a>
+        </p>
+        <p><strong>LinkedIn:</strong> 
+            <a href="https://linkedin.com/in/pravallika-ukkalam" target="_blank">
+                linkedin.com/in/pravallika-ukkalam
+            </a>
+        </p>
+    </div>
 
-        <div class="project card">
-          <h3>Terraform Infrastructure Automation</h3>
-          <div class="muted">Terraform • Azure • Bicep</div>
-          <p class="small" style="margin-top:8px">
-            Provisioned Azure resources (Resource Groups, VNets, Storage, AKS) and implemented modular Terraform code to enable repeatable,
-            secure, and scalable infrastructure deployments across environments.
-          </p>
-        </div>
+</div>
 
-        <div class="project card">
-          <h3>AKS Microservices Deployment</h3>
-          <div class="muted">Kubernetes • Helm • Ingress • Autoscaling</div>
-          <p class="small" style="margin-top:8px">
-            Deployed microservices on Azure Kubernetes Service using Helm charts, configured Ingress, secrets management, and horizontal pod autoscaling
-            for production-grade resilience and scalability.
-          </p>
-        </div>
-
-        <div class="project card">
-          <h3>Centralized Monitoring: ELK & Grafana</h3>
-          <div class="muted">ELK • Grafana • Prometheus</div>
-          <p class="small" style="margin-top:8px">
-            Implemented centralized logging and monitoring for AKS workloads using Elastic Stack and Grafana dashboards. Enabled alerting and dashboards for developers
-            and SREs to reduce mean time to resolution (MTTR).
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!-- Experience -->
-    <section>
-      <h2>Experience</h2>
-      <div class="card">
-        <h3>DevOps & Azure Cloud Engineer — Omnistore POS Retail Solution (TCS)</h3>
-        <div class="muted">May 2020 – Apr 2023</div>
-        <ul style="margin-top:10px">
-          <li>Managed end-to-end DevOps pipelines using Azure DevOps, Jenkins, and Docker, driving automation and efficient delivery of retail solutions for TCS clients.</li>
-          <li>Leveraged Terraform and Bicep to automate infrastructure provisioning on Azure, achieving efficient, repeatable, and scalable cloud environments.</li>
-          <li>Administered and optimized Azure Cloud Services, ensuring high availability, security, and scalability for enterprise-grade applications, while handling daily cloud operations and resource provisioning.</li>
-          <li>Deployed and managed Azure Kubernetes Service (AKS), Docker containers, and Kubernetes, orchestrating containerized applications for continuous delivery and scalability in production environments.</li>
-          <li>Developed and maintained CI/CD pipelines using Jenkins, Maven, and Git, enabling seamless integration, automated testing, and rapid deployment of applications.</li>
-          <li>Integrated and managed Prometheus, Grafana, and ELK for robust monitoring, real-time performance tracking, and centralized logging to ensure proactive issue resolution.</li>
-          <li>Delivered on-time solutions with a strong focus on client requirements, participating in release management and collaborating with development teams to ensure smooth production releases.</li>
-        </ul>
-      </div>
-    </section>
-
-    <!-- Education -->
-    <section>
-      <h2>Education</h2>
-      <div class="card">
-        <h3>Master of Science (MS), Data Analytics — Dublin Business School</h3>
-        <div class="muted">Jan 2024 – Jan 2025</div>
-        <p class="small" style="margin-top:8px">Relevant coursework and projects in Data Mining, Machine Learning, Cloud Computing, Big Data Analytics. Tools: Python, SQL, Power BI, Azure.</p>
-
-        <h3 style="margin-top:12px">Bachelor of Technology (B.Tech), Electronics & Communication</h3>
-        <div class="muted">QIS College of Engineering & Technology</div>
-      </div>
-    </section>
-
-    <!-- Footer / Contact -->
-    <footer>
-      <div>
-        <div style="font-weight:800">Get in touch</div>
-        <div class="small muted" style="margin-top:6px">I'm open to DevOps / Cloud Engineer roles across Ireland.</div>
-      </div>
-      <div style="text-align:right">
-        <div style="font-weight:700">Contact</div>
-        <div class="small">Email: <a class="link" href="mailto:ukkalampravallika@gmail.com">ukkalampravallika@gmail.com</a></div>
-        <div class="small">Phone: +353 89 976 1911</div>
-        <div style="margin-top:8px">
-          <a class="btn" href="https://github.com/Pravallika-cloudops" target="_blank">GitHub</a>
-          <a class="btn" href="https://www.linkedin.com/in/pravallika-ukkalam" target="_blank">LinkedIn</a>
-        </div>
-      </div>
-    </footer>
-
-  </div>
-
-  <script>
-    // Small UX: add hash navigation smooth scroll
-    document.querySelectorAll('a[href^="#"]').forEach(a=>{
-      a.addEventListener('click', e=>{
-        e.preventDefault();
-        const t = document.querySelector(a.getAttribute('href'));
-        if(t) t.scrollIntoView({behavior:'smooth',block:'start'});
-      });
-    });
-  </script>
 </body>
 </html>
