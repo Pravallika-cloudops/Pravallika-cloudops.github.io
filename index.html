@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Pravallika Ukkalam — DevOps Engineer</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+<style>
+  :root{--bg:#0b1020;--card:#0f1724;--accent:#00d1b2;--muted:#9aa4b2;--glass:rgba(255,255,255,0.03)}
+  *{box-sizing:border-box;font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial}
+  body{margin:0;background:linear-gradient(180deg,#04102a 0%, #071126 100%);color:#e6eef6}
+  .wrap{max-width:1100px;margin:40px auto;padding:28px}
+  .hero{display:grid;grid-template-columns:1fr 420px;gap:30px;align-items:center}
+  .name{font-size:42px;font-weight:800;margin:0 0 6px}
+  .subtitle{color:var(--accent);font-weight:600;margin-bottom:12px}
+  .lead{color:var(--muted);line-height:1.6}
+  .buttons{margin-top:18px}
+  .btn{display:inline-block;padding:10px 16px;border-radius:999px;margin-right:10px;border:1px solid rgba(255,255,255,0.06);text-decoration:none;color:#081019;background:transparent}
+  .btn-ghost{background:transparent;color:var(--accent);border:1px solid rgba(0,0,0,0.12)}
+  .card{background:var(--card);border-radius:12px;padding:18px;margin-top:26px;box-shadow:0 6px 18px rgba(2,6,23,0.6)}
+  h2{margin:0 0 12px}
+  .grid2{display:grid;grid-template-columns:repeat(2,1fr);gap:20px;margin-top:18px}
+  ul{margin:8px 0 0;padding-left:18px;color:var(--muted)}
+  .projects .p{margin-bottom:14px}
+  footer{margin-top:34px;color:var(--muted);font-size:14px;text-align:center}
+  @media(max-width:880px){.hero{grid-template-columns:1fr;}.buttons{display:flex;flex-wrap:wrap}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+    <div>
+      <div class="subtitle">DevOps Engineer • Cloud Automation</div>
+      <h1 class="name">Pravallika Ukkalam</h1>
+      <p class="lead">Results-driven DevOps Engineer with 4+ years of hands-on experience building scalable cloud infrastructure, automating CI/CD pipelines, and deploying containerized applications on Azure and AWS. Passionate about IaC (Terraform), Kubernetes, and cloud operational excellence.</p>
+      <div class="buttons">
+        <a class="btn" href="https://www.linkedin.com/in/your-link" target="_blank">LinkedIn Profile</a>
+        <a class="btn btn-ghost" href="https://github.com/Pravallika-cloudops" target="_blank">GitHub Portfolio</a>
+      </div>
+
+      <div class="card">
+        <h2>About Me</h2>
+        <p style="color:var(--muted);line-height:1.5">I hold an MS in Data Analytics (Dublin Business School). I design and operate CI/CD pipelines, automate cloud provisioning with Terraform, and run production workloads on AKS. Available for full-time DevOps/Cloud Engineering roles across Ireland (Stamp 1G).</p>
+      </div>
+
+      <div class="grid2">
+        <div class="card">
+          <h2>Technical Skills</h2>
+          <ul>
+            <li><strong>Cloud:</strong> Azure (AKS, ACR, VMs), AWS (EC2)</li>
+            <li><strong>CI/CD:</strong> Jenkins, GitHub Actions, Azure DevOps</li>
+            <li><strong>IaC:</strong> Terraform, Ansible</li>
+            <li><strong>Containers:</strong> Docker, Kubernetes (AKS)</li>
+            <li><strong>Monitoring:</strong> Grafana, Prometheus, ELK</li>
+            <li><strong>Scripting:</strong> Python, Bash</li>
+          </ul>
+        </div>
+        <div class="card projects">
+          <h2>Selected Projects</h2>
+          <div class="p"><strong>CI/CD Pipeline (Jenkins)</strong> — End-to-end pipeline: Git → Jenkins → Docker image → AKS deploy. Automated build/test/deploy flow.</div>
+          <div class="p"><strong>Terraform Automation</strong> — Provisioned Azure VMs, VNets, AKS clusters and storage using Terraform modules for repeatable infra.</div>
+          <div class="p"><strong>AKS Microservices</strong> — Deployed microservices with Helm charts, configured Ingress & Horizontal Pod Autoscaler.</div>
+          <div class="p"><strong>Monitoring & Logging</strong> — Centralized logs with ELK and dashboards in Grafana for AKS workloads.</div>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <!-- right column: image / contact card -->
+      <div style="border-radius:12px;overflow:hidden">
+        <img alt="DevOps" src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=900&auto=format&fit=crop&crop=faces" style="width:100%;display:block;"/>
+      </div>
+      <div class="card" style="margin-top:14px">
+        <h2>Contact</h2>
+        <p style="color:var(--muted);margin:0">Ireland · Open to work</p>
+        <p style="color:var(--muted);margin:6px 0 0">Email: <a style="color:var(--accent)" href="mailto:pravallika@gmail.com">ukkalampravallika@gmail.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <footer>© Pravallika Ukkalam · DevOps Engineer · Built with GitHub Pages</footer>
+</div>
+</body>
+</html>
