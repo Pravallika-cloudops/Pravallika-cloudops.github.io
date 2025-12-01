@@ -3,31 +3,24 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1" />
-
-  <!-- Disable LinkedIn Thumbnail -->
-  <meta property="og:image" content="">
-  <meta name="twitter:image" content="">
-
   <title>Pravallika Ukkalam — DevOps & Cloud Engineer</title>
-  <!-- Remove preview image for LinkedIn -->
-<meta property="og:image" content="https://via.placeholder.com/1x1.png">
-<meta name="twitter:image" content="https://via.placeholder.com/1x1.png">
   <meta name="description" content="Pravallika Ukkalam — DevOps & Azure Cloud Engineer. CI/CD, Terraform, AKS, Docker, Monitoring" />
 
-  <!-- Open Graph & Twitter Card: used by LinkedIn, Twitter, Facebook for preview thumbnails -->
+  <!-- Open Graph & Twitter Card (small transparent image as preview so LinkedIn shows no big thumbnail) -->
   <meta property="og:title" content="Pravallika Ukkalam — DevOps & Cloud Engineer" />
   <meta property="og:description" content="DevOps Engineer with 4+ years in Azure & AWS — CI/CD, Terraform, AKS, Docker, ELK, Grafana" />
-  <!-- change this to the final public thumbnail URL AFTER you upload thumbnail.png to repo root -->
+  <!-- IMPORTANT: this must point to a tiny 1x1 transparent PNG at your repo root -->
   <meta property="og:image" content="https://pravallika-cloudops.github.io/thumbnail.png" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://pravallika-cloudops.github.io/" />
-  <meta name="twitter:card" content="summary_large_image" />
+
+  <meta name="twitter:card" content="summary" />
   <meta name="twitter:title" content="Pravallika Ukkalam — DevOps & Cloud Engineer" />
   <meta name="twitter:description" content="DevOps Engineer with 4+ years in Azure & AWS — CI/CD, Terraform, AKS, Docker, ELK, Grafana" />
   <meta name="twitter:image" content="https://pravallika-cloudops.github.io/thumbnail.png" />
 
   <style>
-    /* Basic reset */
+    /* Your CSS (kept from your file) */
     *{box-sizing:border-box;margin:0;padding:0}
     html,body{height:100%}
     body{
@@ -38,22 +31,12 @@
       -webkit-font-smoothing:antialiased;
       -moz-osx-font-smoothing:grayscale;
     }
-
-    /* Container */
     .container{max-width:1100px;margin:40px auto;padding:28px}
-
-    /* Top nav */
-    .nav{
-      display:flex;justify-content:space-between;align-items:center;
-      padding:18px 28px;position:sticky;top:0;background:rgba(2,6,12,0.55);
-      backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);z-index:100;
-    }
+    .nav{display:flex;justify-content:space-between;align-items:center;padding:18px 28px;position:sticky;top:0;background:rgba(2,6,12,0.55);backdrop-filter: blur(6px);border-bottom:1px solid rgba(255,255,255,0.03);z-index:100;}
     .brand{font-weight:800;color:#fff;font-size:20px}
     .nav-links{display:flex;gap:18px}
     .nav a{color:#dfe7ee;text-decoration:none;padding:8px 12px;border-radius:8px;font-weight:600}
     .nav a.active, .nav a:hover{background:#f7b500;color:#071120}
-
-    /* Hero */
     .hero{display:grid;grid-template-columns:1fr 420px;gap:32px;align-items:center;margin-top:20px}
     .hero-left h1{font-size:44px;margin-bottom:14px;color:#fff}
     .hero-left p.lead{color:#cbd7e6;max-width:700px;margin-bottom:16px}
@@ -61,49 +44,28 @@
     .btn{display:inline-block;padding:10px 18px;border-radius:28px;text-decoration:none;font-weight:700}
     .btn.primary{background:#f7b500;color:#071120}
     .btn.ghost{border:1px solid rgba(255,255,255,0.08);color:#e8eef8;background:transparent}
-
     .hero-right{border-radius:12px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.5)}
     .hero-img{width:100%;height:320px;object-fit:cover;display:block;background:linear-gradient(135deg,#0f1724,#0a0f1a)}
-
-    /* Two-column sections */
     .two-col{display:grid;grid-template-columns:380px 1fr;gap:28px;margin-top:36px}
     .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));padding:18px;border-radius:12px;border:1px solid rgba(255,255,255,0.03)}
-
     .section-title{font-size:34px;font-weight:800;color:#fff;margin-bottom:12px;position:relative}
     .section-sub{color:#b9c6d6;margin-bottom:18px}
-
-    /* Skills bars */
     .skill{margin-bottom:14px}
     .skill .label{display:flex;justify-content:space-between;font-weight:700;color:#f1f5f9;margin-bottom:6px}
     .bar{background:rgba(255,255,255,0.06);height:12px;border-radius:8px;overflow:hidden}
     .bar > span{display:block;height:100%;background:linear-gradient(90deg,#f7b500,#ffd86b);width:0%;border-radius:8px;transition:width 900ms ease-in-out}
-
-    /* Experience & projects */
     .item{margin-bottom:16px}
     .item h4{font-size:16px;color:#fff;margin-bottom:6px}
     .muted{color:#a8b6c8;font-size:14px;margin-bottom:8px}
-
-    /* Projects list */
     .projects-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:12px}
     .project{background:rgba(255,255,255,0.02);padding:14px;border-radius:10px;border:1px solid rgba(255,255,255,0.03)}
     .project h5{color:#fff;margin-bottom:6px}
     .project p{color:#c7d2dd;font-size:14px}
-
-    /* Contact */
     .contact-list{list-style:none;padding-left:0}
     .contact-list li{display:flex;align-items:center;gap:10px;padding:10px 0;border-bottom:1px dashed rgba(255,255,255,0.03)}
     .contact-list a{color:#ffd86b;font-weight:700;text-decoration:none}
-
-    /* Footer */
     footer{margin-top:36px;padding:20px 0;color:#98a7bb;text-align:center;font-size:13px}
-
-    /* Responsive */
-    @media (max-width:1000px){
-      .hero{grid-template-columns:1fr}
-      .two-col{grid-template-columns:1fr}
-      .hero-right{order:2}
-      .hero-left{order:1}
-    }
+    @media (max-width:1000px){.hero{grid-template-columns:1fr}.two-col{grid-template-columns:1fr}.hero-right{order:2}.hero-left{order:1}}
   </style>
 </head>
 <body>
@@ -132,13 +94,13 @@
 
         <div class="cta">
           <a class="btn primary" href="#contact">Contact Me</a>
-          <a class="btn ghost" href="https://github.com/Pravallika-cloudops" target="_blank" rel="noopener">GitHub Portfolio</a>
+          <a class="btn ghost" href="https://pravallika-cloudops.github.io" target="_blank" rel="noopener">my-portfolio</a>
           <a class="btn ghost" href="https://www.linkedin.com/in/pravallika-ukkalam" target="_blank" rel="noopener">LinkedIn</a>
         </div>
       </div>
 
-      <div class="hero-right card">
-        <!-- put an image of you in the repository and use the filename below -->
+      <div class="hero-right card" aria-hidden="true">
+        <!-- optional illustration; kept for website only, not for social preview -->
         <img class="hero-img" src="https://images.unsplash.com/photo-1526378726133-0f82c7b76f1d?q=80&w=1200&auto=format&fit=crop&ixlib=rb-4.0.3&s=placeholder" alt="DevOps engineer at work">
       </div>
     </section>
@@ -305,7 +267,6 @@
         setTimeout(()=> b.style.width = w, 100);
       });
     }
-    // run when page loads
     window.addEventListener('load', animateBars);
   </script>
 </body>
